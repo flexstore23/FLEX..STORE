@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b12">
+<title>FLEX STORE | شحن الألعاب</title>
+<style>
+:root{--bg:#090b12;--panel:#121622;--panel2:#181f2e;--gold:#f4c76b;--gold2:#ffe5a5;--text:#f7f7fb;--muted:#aeb5c5;--line:#2a3243;--green:#20c978}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#292039 0,transparent 32rem),radial-gradient(circle at 0% 40%,#182a36 0,transparent 28rem),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.6}
+button,input,select{font:inherit}button{cursor:pointer}.wrap{width:min(1120px,92%);margin:auto}
+header{padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #ffffff12}
+.logo{font-size:1.45rem;font-weight:900;letter-spacing:1px;color:var(--gold)}.logo span{color:#fff}.tag{color:var(--muted);font-size:.85rem}
+.hero{padding:54px 0 34px;text-align:center}.eyebrow{color:var(--gold);font-weight:bold;letter-spacing:2px}.hero h1{font-size:clamp(2.1rem,6vw,4rem);line-height:1.15;margin:12px 0}.hero h1 b{color:var(--gold)}.hero p{color:var(--muted);margin:10px auto 22px;max-width:620px}
+.pill{display:inline-block;border:1px solid #f4c76b66;color:var(--gold2);border-radius:99px;padding:7px 15px;font-size:.9rem}
+.games{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 32px}.game{background:linear-gradient(145deg,#1a2030,#10141e);border:1px solid var(--line);border-radius:18px;padding:18px;text-align:center;cursor:pointer;transition:.2s}.game:hover,.game.active{border-color:var(--gold);transform:translateY(-3px)}.game .ico{font-size:2rem}.game strong{display:block;margin-top:6px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:28px 0 14px}.section-head h2{margin:0;font-size:1.45rem}.section-head small{color:var(--muted)}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:linear-gradient(155deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:17px;padding:17px;display:flex;flex-direction:column;gap:10px}.card h3{margin:0;font-size:1.05rem}.price{font-size:1.35rem;color:var(--gold2);font-weight:900}.price small{font-size:.78rem;color:var(--muted);font-weight:400}.buy,.primary{border:0;border-radius:11px;background:linear-gradient(100deg,#dcae4d,#ffe4a0);color:#17120a;padding:11px 14px;font-weight:900}.buy{margin-top:auto}.subhead{color:var(--gold);margin:26px 0 10px;font-size:1.08rem}
+.info{margin:30px 0;background:#111722;border:1px solid var(--line);border-radius:18px;padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:18px}.info h3{margin:0 0 8px}.copyrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.number{font-weight:bold;direction:ltr;display:inline-block}.copy{background:#263044;color:white;border:1px solid #46516a;border-radius:9px;padding:7px 12px}
+footer{text-align:center;color:var(--muted);padding:28px 0 40px;border-top:1px solid #ffffff12}.gold{color:var(--gold)}
+.modal,.welcome{position:fixed;inset:0;background:#03050bdc;display:none;align-items:center;justify-content:center;padding:18px;z-index:5}.modal.show,.welcome.show{display:flex}.dialog{width:min(470px,100%);background:#141a27;border:1px solid #6c5b39;border-radius:20px;padding:22px;box-shadow:0 20px 70px #0009}.dialog h2{margin:0 0 5px}.dialog p{color:var(--muted);margin:0 0 16px}.field{display:block;margin:12px 0}.field span{display:block;font-size:.9rem;margin-bottom:5px;color:#dce1ec}.field input,.field select{width:100%;padding:12px;border:1px solid #3a455b;background:#0c111b;color:white;border-radius:10px;min-height:46px}.actions{display:flex;gap:9px;margin-top:16px}.actions>*{flex:1}.secondary{background:#273044;color:white;border:1px solid #46516a;border-radius:11px;padding:10px}.welcome .dialog{text-align:center;padding:34px 22px}.welcome .brandmark{font-size:2.8rem;color:var(--gold)}.welcome h2{font-size:2rem}.welcome .primary{width:100%;margin-top:18px}
+@media(max-width:720px){.games{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.info{grid-template-columns:1fr}.hero{padding-top:38px}}
+@media(max-width:430px){.products{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.tag{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo">FLEX <span>STORE</span></div><div class="tag">شحن ألعابك بسهولة وأمان</div></header>
+<section class="hero">
+<div class="eyebrow">WELCOME TO FLEX STORE</div>
+<h1>اشحن لعبتك <b>بسهولة</b></h1>
+<p>اختار لعبتك وباقتك، اضغط «اطلب الآن»، وابعت طلبك مباشرة على رقم واتساب اللي تختاره.</p>
+<div class="pill">🔥 أرخص أسعار الشحن في مصر عند FLEX وبس</div>
+</section>
+<div class="section-head"><h2>اختار لعبتك</h2><small>كل الأسعار بالجنيه المصري</small></div>
+<div class="games">
+<button class="game active" data-target="ff"><span class="ico">🔥</span><strong>Free Fire</strong></button>
+<button class="game" data-target="pubg"><span class="ico">🎮</span><strong>PUBG Mobile</strong></button>
+<button class="game" data-target="efootball"><span class="ico">⚽</span><strong>eFootball</strong></button>
+</div>
+<section id="ff" class="game-section">
+<div class="section-head"><h2>🔥 شحن Free Fire</h2><small>اختار الباقة المناسبة</small></div>
+<div class="subhead">باقات الجواهر</div><div class="products" id="ff-basic"></div>
+<div class="subhead">باقات شحن ID</div><div class="products" id="ff-id"></div>
+<div class="subhead">الشحن المضاعف</div><div class="products" id="ff-double"></div>
+<div class="subhead">العضويات</div><div class="products" id="ff-members"></div>
+</section>
+<section id="pubg" class="game-section" hidden>
+<div class="section-head"><h2>🎮 شحن PUBG Mobile</h2><small>شدات واشتراكات</small></div>
+<div class="products" id="pubg-uc"></div>
+<div class="subhead">الازدهار</div><div class="products" id="pubg-growth"></div>
+<div class="subhead">برايم</div><div class="products" id="pubg-prime"></div>
+</section>
+<section id="efootball" class="game-section" hidden>
+<div class="section-head"><h2>⚽ شحن eFootball</h2><small>كوينز</small></div>
+<div class="products" id="ef-coins"></div>
+</section>
+<section class="info">
+<div><h3>💳 الدفع عبر Vodafone Cash</h3><p class="tag">حوّل المبلغ على الرقم التالي، ثم أرسل طلبك على واتساب.</p><div class="copyrow"><span class="number" id="cash-number">01032575828</span><button class="copy" id="copy-cash">📋 نسخ الرقم</button></div><small id="copy-status" aria-live="polite"></small></div>
+<div><h3>📞 خدمة العملاء</h3><p class="tag">اختار رقم واتساب المناسب عند إرسال طلبك.</p><div class="number">01042893540</div><br><div class="number">01095428705</div><br><div class="number">01032575828</div></div>
+</section>
+<footer><div class="logo">FLEX STORE</div><div>أرخص أسعار الشحن في مصر عند FLEX وبس 🔥</div><small>تأكد من اختيار اللعبة والباقة قبل إرسال الطلب.</small></footer>
+</div>
+<div class="modal" id="order-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+<div class="dialog"><h2 id="modal-title">تأكيد طلب الشحن</h2><p id="selected-product"></p>
+<form id="order-form">
+<label class="field"><span>Player ID / ID اللاعب (اختياري)</span><input id="player-id" type="text" placeholder="اكتب ID اللاعب لو متاح"></label>
+<label class="field"><span>اختار رقم واتساب</span><select id="wa-number"><option value="201042893540">01042893540</option><option value="201095428705">01095428705</option><option value="201032575828">01032575828</option></select></label>
+<div class="actions"><button class="primary" type="submit">إرسال على واتساب</button><button class="secondary" type="button" id="close-modal">إلغاء</button></div>
+</form></div>
+</div>
+<div class="welcome show" id="welcome">
+<div class="dialog"><div class="brandmark">✦ FLEX ✦</div><h2>أهلاً بيك في <span class="gold">FLEX STORE</span></h2><p>أرخص أسعار الشحن في مصر عند FLEX وبس 🔥</p><button class="primary" id="enter-store">🚀 ادخل المتجر</button></div>
+</div>
+<script>
+const catalog={
+"ff-basic":[["100 جوهرة",50],["310 جوهرة",140],["520 جوهرة",200],["1060 جوهرة",360],["2180 جوهرة",750],["شهرية",360],["أسبوعية",75],["أسبوعية مخفضة",25],["عروض مستويات",190]],
+"ff-id":[["100 جوهرة - ID",60],["210 جوهرة - ID",120],["310 جوهرة - ID",170],["520 جوهرة - ID",270],["1160 جوهرة - ID",570],["2200 جوهرة - ID",1100]],
+"ff-double":[["310 + 310 جوهرة",260],["520 + 520 جوهرة",380],["1060 + 1060 جوهرة",700],["2180 + 2180 جوهرة",1480]],
+"ff-members":[["أسبوعية + أسبوعية",145],["شهرية + شهرية",690]],
+"pubg-uc":[["60 شدة",60],["325 شدة",260],["660 شدة",510],["1800 شدة",1290],["3850 شدة",2550],["8100 شدة",5100]],
+"pubg-growth":[["الازدهار الأول",60],["الازدهار الثاني",160],["الازدهار الثالث",260]],
+"pubg-prime":[["برايم عادي",65],["برايم بلس",510]],
+"ef-coins":[["100 كوين",70],["300 كوين",150],["500 كوين",250],["1000 كوين",460],["2000 كوين",900],["3000 كوين",1300],["5000 كوين",2100],["10000 كوين",3850],["15000 كوين",5750]]
+};
+let selected={game:"",name:"",price:0};
+const gameNames={ff:"Free Fire",pubg:"PUBG Mobile",efootball:"eFootball"};
+function render(){
+ Object.entries(catalog).forEach(([id,items])=>{
+  const root=document.getElementById(id);
+  root.innerHTML=items.map(([name,price])=>`<article class="card"><h3>${name}</h3><div class="price">${price} <small>جنيه</small></div><button class="buy" type="button" data-name="${name}" data-price="${price}" data-list="${id}">اطلب الآن</button></article>`).join("");
+ });
+}
+render();
+document.querySelectorAll(".game").forEach(btn=>btn.addEventListener("click",()=>{
+ document.querySelectorAll(".game").forEach(x=>x.classList.toggle("active",x===btn));
+ document.querySelectorAll(".game-section").forEach(s=>s.hidden=s.id!==btn.dataset.target);
+}));
+document.addEventListener("click",e=>{
+ const b=e.target.closest(".buy"); if(!b)return;
+ const list=b.dataset.list; selected={game:list.startsWith("ff")?"Free Fire":list.startsWith("pubg")?"PUBG Mobile":"eFootball",name:b.dataset.name,price:Number(b.dataset.price)};
+ document.getElementById("selected-product").textContent=`${selected.game} — ${selected.name} — ${selected.price} جنيه`;
+ document.getElementById("order-modal").classList.add("show");
+});
+document.getElementById("close-modal").addEventListener("click",()=>document.getElementById("order-modal").classList.remove("show"));
+document.getElementById("order-form").addEventListener("submit",e=>{
+ e.preventDefault();
+ const id=document.getElementById("player-id").value.trim();
+ const phone=document.getElementById("wa-number").value;
+ const message=`السلام عليكم، عايز أطلب شحن من FLEX STORE%0Aاللعبة: ${selected.game}%0Aالباقة: ${selected.name}%0Aالسعر: ${selected.price} جنيه%0AID اللاعب: ${id||"لم يتم إدخاله"}`;
+ window.open(`https://wa.me/${phone}?text=${message}`,"_blank");
+ document.getElementById("order-modal").classList.remove("show");
+});
+document.getElementById("copy-cash").addEventListener("click",async()=>{
+ const n=document.getElementById("cash-number").textContent;
+ const status=document.getElementById("copy-status");
+ try{await navigator.clipboard.writeText(n);status.textContent="تم نسخ رقم فودافون كاش."}
+ catch(err){status.textContent="انسخ الرقم يدويًا: "+n}
+});
+document.getElementById("enter-store").addEventListener("click",()=>document.getElementById("welcome").classList.remove("show"));
+</script>
+</body></html>
